@@ -1,0 +1,35 @@
+.about {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2rem;
+    color: #FFD700; /* Gold */
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+  }
+  
+  /* Description Styling */
+  .description {
+    font-size: 1.1rem;
+    color: #D3D3D3; /* Light Gray */
+    line-height: 1.6;
+    max-width: 700px;
+    margin: auto;
+    text-align: justify;
+    background: #1E1E1E; /* Dark Gray */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.2); /* Soft Gold Glow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .description:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 255, 255, 0.3); /* Cyan Glow */
+  }
+  

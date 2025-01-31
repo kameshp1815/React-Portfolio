@@ -1,0 +1,69 @@
+.skills {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    color: #FFD700; /* Gold color for title */
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .skillsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns layout */
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .skillsGroup {
+    background-color: #1E1E1E; /* Dark Gray background for groups */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.2); /* Soft gold glow effect */
+  }
+  
+  .skillsGroupTitle {
+    font-size: 1.5rem;
+    color: #FFD700; /* Gold for headings */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .skillsList {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns layout for skills */
+    gap: 20px;
+  }
+  
+  .skillItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333333; /* Charcoal background for items */
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .skillItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 255, 255, 0.3); /* Cyan glow effect on hover */
+  }
+  
+  .skillIcon {
+    font-size: 2rem;
+    margin-right: 10px;
+    color: #00FFFF; /* Cyan color for icons */
+  }
+  
+  .skillItem span {
+    font-size: 1.2rem;
+    color: #D3D3D3; /* Light gray text color */
+  }
+  

@@ -1,0 +1,56 @@
+.projects {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    color: #FFD700; /* Gold for the title */
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+  }
+  
+  .projectItem {
+    background: #1E1E1E; /* Dark Gray for contrast */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.2); /* Soft gold glow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .projectItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 255, 255, 0.3); /* Cyan glow effect on hover */
+  }
+  
+  .projectItem h3 {
+    font-size: 1.8rem;
+    color: #00FFFF; /* Cyan for headings */
+    margin-bottom: 15px;
+  }
+  
+  .projectItem p {
+    font-size: 1.1rem;
+    color: #D3D3D3; /* Light gray for soft contrast */
+    line-height: 1.6;
+  }
+  
+  .githubLink {
+    display: block;
+    margin-top: 15px;
+    font-size: 1.1rem;
+    color: #FFD700; /* Gold color for GitHub link */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .githubLink:hover {
+    color: #00FFFF; /* Cyan hover effect for the GitHub link */
+  }
+  

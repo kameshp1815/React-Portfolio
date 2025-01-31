@@ -1,0 +1,63 @@
+.contact {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2rem;
+    color: #FFD700; /* Gold */
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+  }
+  
+  /* Contact Card */
+  .contactCard {
+    background: #1E1E1E; /* Dark Gray */
+    padding: 20px;
+    border-radius: 12px;
+    display: inline-block;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.2); /* Gold Glow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .contactCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 255, 255, 0.3); /* Cyan Glow */
+  }
+  
+  /* Contact Items */
+  .contactItem {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+  }
+  
+  .contactIcon {
+    font-size: 2rem;
+    margin-right: 10px;
+  }
+  
+  .emailIcon {
+    color: #FFD700; /* Gold */
+  }
+  
+  .phoneIcon {
+    color: #00FFFF; /* Cyan */
+  }
+  
+  /* Links */
+  .contactItem a {
+    color: #D3D3D3; /* Light Gray */
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .contactItem a:hover {
+    color: #FF69B4; /* Soft Pink */
+  }
+  

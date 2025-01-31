@@ -1,0 +1,41 @@
+.education {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text for readability */
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .education .title {
+    font-size: 2rem;
+    color: #FFD700; /* Gold for a premium look */
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+  }
+  
+  .educationItem {
+    background: #1E1E1E; /* Dark Gray for contrast */
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.2); /* Soft gold glow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .educationItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 255, 255, 0.3); /* Cyan glow effect on hover */
+  }
+  
+  .educationItem h3 {
+    font-size: 1.5rem;
+    color: #00FFFF; /* Cyan for headings */
+    margin-bottom: 10px;
+  }
+  
+  .educationItem p {
+    font-size: 1rem;
+    color: #D3D3D3; /* Light gray for soft contrast */
+    line-height: 1.5;
+  }
