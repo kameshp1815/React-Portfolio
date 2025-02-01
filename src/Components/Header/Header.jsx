@@ -11,16 +11,16 @@ const Header = () => {
         <h1 className="name">KAMESH P</h1>
       </div>
       <div className="socialLinks">
-        <a href="https://github.com/your-github" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/kameshp1815" target="_blank" rel="noopener noreferrer">
           <FaGithub className="icon github" />
         </a>
-        <a href="https://linkedin.com/in/your-linkedin" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/kamesh-p-8049082b3/" target="_blank" rel="noopener noreferrer">
           <FaLinkedin className="icon linkedin" />
         </a>
-        <a href="https://leetcode.com/your-leetcode" target="_blank" rel="noopener noreferrer">
+        <a href="https://leetcode.com/u/kameshkamesh3876/" target="_blank" rel="noopener noreferrer">
           <SiLeetcode className="icon leetcode" />
         </a>
-        <a href="https://www.codechef.com/users/your-codechef" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.codechef.com/users/kamesh08" target="_blank" rel="noopener noreferrer">
           <SiCodechef className="icon codechef" />
         </a>
       </div>

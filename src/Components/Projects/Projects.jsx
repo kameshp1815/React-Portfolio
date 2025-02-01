@@ -11,7 +11,7 @@ const Projects = () => {
         <p>
           Developed an IoT-based Smart Parking System to improve urban parking efficiency using real-time data. Integrated sensors to monitor parking space availability and provide live updates via an LCD display.
         </p>
-        <a href="https://github.com/yourgithub/SmartParkingSystem" className="githubLink" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/kameshp1815/Smart-ParkingSystem.git" className="githubLink" target="_blank" rel="noopener noreferrer">
           <FaGithub className="githubIcon" /> View on GitHub
         </a>
       </div>
@@ -21,7 +21,7 @@ const Projects = () => {
         <p>
           Developed an interactive Rock-Paper-Scissors game using HTML, CSS, and JavaScript, featuring a user-friendly interface and responsive design for an engaging experience.
         </p>
-        <a href="https://github.com/yourgithub/RockPaperScissors" className="githubLink" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/kameshp1815/rock-paper-scissor-game.git" className="githubLink" target="_blank" rel="noopener noreferrer">
           <FaGithub className="githubIcon" /> View on GitHub
         </a>
       </div>
@@ -31,7 +31,7 @@ const Projects = () => {
         <p>
           Developed a dynamic Agriculture Machinery Rental System using React for the frontend. The system features a Machines page where users can browse available agricultural machinery and book rentals based on the number of days.
         </p>
-        <a href="https://github.com/yourgithub/AgricultureMachineryRental" className="githubLink" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/kameshp1815/Agriculture-Machines-Rental.git" className="githubLink" target="_blank" rel="noopener noreferrer">
           <FaGithub className="githubIcon" /> View on GitHub
         </a>
       </div>

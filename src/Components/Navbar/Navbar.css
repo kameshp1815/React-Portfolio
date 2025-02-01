@@ -1,85 +1,106 @@
 /* Navbar Styles */
 .navbar {
-    position: fixed; /* Fixed on top */
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.9); /* Black with transparency */
-    padding: 15px 0;
-    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.2); /* Gold shadow effect */
-    z-index: 1000;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  /* Navbar List */
-  .navList {
+  position: fixed; /* Fixed on top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9); /* Black with transparency */
+  padding: 15px 0;
+  box-shadow: 0 4px 10px rgba(255, 215, 0, 0.2); /* Gold shadow effect */
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Navbar List */
+.navList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+/* Navbar Links */
+.navLink {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffd700; /* Gold */
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+/* Hover & Active Effects */
+.navLink:hover {
+  color: #00ffff; /* Neon Cyan */
+  text-shadow: 0px 0px 10px rgba(0, 255, 255, 0.7);
+  transform: scale(1.1);
+}
+
+/* Active Section Indicator */
+.navLink::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 0;
+  height: 3px;
+  background: #ffd700; /* Gold */
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.navLink:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  padding: 10px;
+}
+
+.hamburger .line {
+  width: 30px;
+  height: 3px;
+  background: #ffd700; /* Gold */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hamburger {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    gap: 30px;
-    padding: 0;
-    margin: 0;
   }
-  
-  /* Navbar Links */
-  .navLink {
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #FFD700; /* Gold */
-    text-transform: uppercase;
-    padding: 10px 15px;
-    border-radius: 6px;
-    transition: all 0.3s ease-in-out;
-    position: relative;
-  }
-  
-  /* Hover & Active Effects */
-  .navLink:hover {
-    color: #00FFFF; /* Neon Cyan */
-    text-shadow: 0px 0px 10px rgba(0, 255, 255, 0.7);
-    transform: scale(1.1);
-  }
-  
-  /* Active Section Indicator */
-  .navLink::after {
-    content: "";
+
+  .navList {
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.95);
+    padding: 20px;
+    border-radius: 10px;
     position: absolute;
+    top: 60px;
     left: 50%;
-    bottom: -5px;
-    width: 0;
-    height: 3px;
-    background: #FFD700; /* Gold */
-    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+    transform: translateX(-50%);
+    display: none;
+    width: 80%;
   }
-  
-  .navLink:hover::after {
-    width: 100%;
-    left: 0;
+
+  .navbar.active .navList {
+    display: flex;
   }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .navList {
-      flex-direction: column;
-      background: rgba(0, 0, 0, 0.95);
-      padding: 20px;
-      border-radius: 10px;
-      position: absolute;
-      top: 60px;
-      left: 50%;
-      transform: translateX(-50%);
-      display: none;
-    }
-  
-    .navbar.active .navList {
-      display: flex;
-    }
-  
-    .navLink {
-      display: block;
-      padding: 10px;
-    }
+
+  .navLink {
+    display: block;
+    padding: 10px;
+    text-align: center;
   }
-  
+}
