@@ -38,7 +38,9 @@
   letter-spacing: 2px;
   margin-bottom: 15px;
 }
-
+.tagline{
+  color:aqua;
+}
 /* Social Links */
 .socialLinks {
   display: flex;

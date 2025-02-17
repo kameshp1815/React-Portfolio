@@ -64,3 +64,30 @@
     margin-bottom: 8px;
   }
   
+  .viewCertificateBtn {
+    background-color: #4682B4; /* Steel Blue */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 15px;
+  }
+  
+  .viewCertificateBtn:hover {
+    background-color: #1E90FF; /* Dodger Blue */
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  .viewCertificateBtn:focus {
+    outline: none;
+  }
+  
+  .viewCertificateBtn:active {
+    transform: scale(0.98); /* Button shrink effect on click */
+  }
+  

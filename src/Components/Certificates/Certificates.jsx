@@ -27,6 +27,9 @@ const Certificates = () => {
             <li>TechA Web Development using HTML & CSS</li>
             <li>TechA Salesforce</li>
           </ul>
+          <a href="path/to/infosys-certificate.pdf" target="_blank" rel="noopener noreferrer">
+            <button className="viewCertificateBtn">View Certificate</button>
+          </a>
         </div>
 
         {/* Coursera Certification */}
@@ -37,10 +40,13 @@ const Certificates = () => {
           <ul>
             <li>HTML, CSS, and JavaScript for Web Developers</li>
           </ul>
+          <a href="path/to/coursera-certificate.pdf" target="_blank" rel="noopener noreferrer">
+            <button className="viewCertificateBtn">View Certificate</button>
+          </a>
         </div>
       </div>
-      <br></br>
-      <hr></hr>
+      <br />
+      <hr />
     </section>
   );
 };
