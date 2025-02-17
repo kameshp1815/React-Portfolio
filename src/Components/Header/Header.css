@@ -163,7 +163,7 @@
   }
 
   .buttons {
-    flex-direction: column; /* Stack buttons vertically */
+    flex-direction: column; 
     align-items: center;
     gap: 10px;
   }
