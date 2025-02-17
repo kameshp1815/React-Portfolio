@@ -21,10 +21,11 @@ const Certificates = () => {
         <div className="certificateCard">
           <SiInfosys className="certificateIcon infosysIcon" />
           <h3>Infosys Springboard</h3>
+          <br />
           <ul>
             <li>Python Foundation</li>
-            <li>TechA Salesforce</li>
             <li>TechA Web Development using HTML & CSS</li>
+            <li>TechA Salesforce</li>
           </ul>
         </div>
 
@@ -32,6 +33,7 @@ const Certificates = () => {
         <div className="certificateCard">
           <SiCoursera className="certificateIcon courseraIcon" />
           <h3>Coursera</h3>
+          <br />
           <ul>
             <li>HTML, CSS, and JavaScript for Web Developers</li>
           </ul>

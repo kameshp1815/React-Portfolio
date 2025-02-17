@@ -1,69 +1,205 @@
 .header {
-    margin-top: 100px;
-    background: #000000; /* Black background */
-    padding: 20px 10px;
-    text-align: center;
+  margin-top: 100px;
+  background: #000000; /* Black background */
+  padding: 20px 10px;
+  text-align: center;
+}
+
+/* Profile Container */
+.profileContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Profile Picture */
+.profilePic {
+  width: 120px; /* Adjust size as needed */
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #FFD700; /* Gold Border */
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.4); /* Gold Glow */
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profilePic:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.6); /* Intense Glow */
+}
+
+/* Name */
+.name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #FFD700; /* Gold */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+/* Social Links */
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Icons */
+.icon {
+  font-size: 2rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Specific Icon Colors */
+.github {
+  color: #FFFFFF; /* White */
+}
+
+.linkedin {
+  color: #0A66C2; /* LinkedIn Blue */
+}
+
+.leetcode {
+  color: #FFA500; /* Orange */
+}
+
+/* Hover Effects for Icons */
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.github:hover {
+  color: #C0A060; /* Muted Gold */
+}
+
+.linkedin:hover {
+  color: #1E90FF; /* Electric Blue */
+}
+
+.leetcode:hover {
+  color: #FFD700; /* Soft Gold */
+}
+
+/* Buttons Container */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+/* Resume & Contact Buttons - Reduced Size */
+.resumeButton,
+.contactButton {
+  padding: 8px 15px; /* Reduced padding */
+  font-size: 1rem; /* Reduced font size */
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 6px; /* Smaller border radius */
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+/* Download Resume Button */
+.resumeButton {
+  background-color: #FFD700; /* Gold */
+  color: #000000; /* Black text */
+  border: 2px solid #FFD700;
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.4); /* Softer shadow */
+}
+
+.resumeButton:hover {
+  background-color: transparent;
+  color: #FFD700;
+  border: 2px solid #FFD700;
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.7);
+  transform: scale(1.04);
+}
+
+/* Contact Me Button */
+.contactButton {
+  background-color: #1E90FF; /* Electric Blue */
+  color: #FFFFFF;
+  border: 2px solid #1E90FF;
+  box-shadow: 0 0 8px rgba(30, 144, 255, 0.4);
+}
+
+.contactButton:hover {
+  background-color: transparent;
+  color: #1E90FF;
+  border: 2px solid #1E90FF;
+  box-shadow: 0 0 12px rgba(30, 144, 255, 0.7);
+  transform: scale(1.04);
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 5px;
   }
-  
-  /* Profile Container */
-  .profileContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-  
-  /* Profile Picture */
+
   .profilePic {
-    width: 120px; /* Adjust size as needed */
-    height: 120px;
-    border-radius: 50%;
-    border: 3px solid #FFD700; /* Gold Border */
-    box-shadow: 0 0 15px rgba(255, 215, 0, 0.4); /* Gold Glow */
-    object-fit: cover;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100px;
+    height: 100px;
   }
-  
-  .profilePic:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6); /* Intense Glow */
-  }
-  
-  /* Name */
+
   .name {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #FFD700; /* Gold */
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 15px;
-  }
-  
-  /* Social Links */
-  .socialLinks {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  /* Icons */
-  .icon {
     font-size: 2rem;
-    transition: transform 0.3s ease, color 0.3s ease;
   }
-  
-  /* Specific Icon Colors */
-  .github { color: #FFFFFF; } /* White */
-  .linkedin { color: #0A66C2; } /* LinkedIn Blue */
-  .leetcode { color: #FFA500; } /* Orange */
-  
-  /* Hover Effects */
-  .icon:hover {
-    transform: scale(1.2);
+
+  .socialLinks {
+    gap: 10px;
+    flex-wrap: wrap;
   }
-  
-  /* Hover Color Change */
-  .github:hover { color: #C0A060; } /* Muted Gold */
-  .linkedin:hover { color: #1E90FF; } /* Electric Blue */
-  .leetcode:hover { color: #FFD700; } /* Soft Gold */
-  
+
+  .icon {
+    font-size: 1.8rem;
+  }
+
+  .buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center;
+    gap: 10px;
+  }
+
+  .resumeButton,
+  .contactButton {
+    width: 75%; /* Wider buttons for better touch experience */
+    padding: 7px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .profilePic {
+    width: 90px;
+    height: 90px;
+  }
+
+  .name {
+    font-size: 1.8rem;
+  }
+
+  .socialLinks {
+    gap: 8px;
+  }
+
+  .icon {
+    font-size: 1.5rem;
+  }
+
+  .buttons {
+    gap: 8px;
+  }
+
+  .resumeButton,
+  .contactButton {
+    width: 50%;
+    padding: 6px 10px;
+    font-size: 0.85rem;
+  }
+}

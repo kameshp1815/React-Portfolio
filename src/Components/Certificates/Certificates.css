@@ -12,7 +12,9 @@
     margin-bottom: 30px;
     letter-spacing: 2px;
   }
-  
+  h3{
+    color: yellow;
+  }
   /* Grid Layout */
   .certificateGrid {
     display: grid;
