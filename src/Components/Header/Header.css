@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Header Container */
 .header {
   margin-top: 100px;
   background: #000000; /* Black background */
-  padding: 20px 10px;
+  padding: 30px 15px;
   text-align: center;
+  font-family: 'Poppins', sans-serif; /* Use Poppins for all text */
 }
 
 /* Profile Container */
@@ -10,42 +14,51 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
+  gap: 12px;
+  margin-bottom: 20px;
 }
 
 /* Profile Picture */
 .profilePic {
-  width: 120px; /* Adjust size as needed */
-  height: 120px;
+  width: 130px; 
+  height: 130px;
   border-radius: 50%;
   border: 3px solid #FFD700; /* Gold Border */
-  box-shadow: 0 0 15px rgba(255, 215, 0, 0.4); /* Gold Glow */
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.6); /* Gold Glow */
   object-fit: cover;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .profilePic:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 20px rgba(255, 215, 0, 0.6); /* Intense Glow */
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.9); /* Intense Glow */
 }
 
 /* Name */
 .name {
-  font-size: 2.5rem;
-  font-weight: bold;
+  font-size: 2.8rem;
+  font-weight: 600;
   color: #FFD700; /* Gold */
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
+  font-family: 'Orbitron', sans-serif; /* Use Orbitron for headings */
 }
-.tagline{
-  color:aqua;
+
+/* Tagline */
+.tagline {
+  font-size: 1.2rem;
+  color: #00FFFF; /* Neon Cyan */
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-family: 'Orbitron', sans-serif; /* Use Orbitron for headings */
 }
+
 /* Social Links */
 .socialLinks {
   display: flex;
   justify-content: center;
   gap: 20px;
+  margin-top: 15px;
 }
 
 /* Icons */
@@ -54,20 +67,24 @@
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* Specific Icon Colors */
+/* Icon Colors */
 .github {
-  color: #FFFFFF; /* White */
+  color: #FFFFFF; 
 }
 
 .linkedin {
-  color: #0A66C2; /* LinkedIn Blue */
+  color: #0A66C2; 
 }
 
 .leetcode {
-  color: #FFA500; /* Orange */
+  color: #FFA500; 
 }
 
-/* Hover Effects for Icons */
+.codechef {
+  color: #FFFFFF;
+}
+
+/* Hover Effects */
 .icon:hover {
   transform: scale(1.2);
 }
@@ -84,124 +101,137 @@
   color: #FFD700; /* Soft Gold */
 }
 
-/* Buttons Container */
+/* Buttons */
 .buttons {
   display: flex;
   justify-content: center;
   gap: 15px;
-  margin-top: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Enable wrapping on smaller screens */
 }
 
-/* Resume & Contact Buttons - Reduced Size */
+/* Resume & Contact Buttons */
 .resumeButton,
 .contactButton {
-  padding: 8px 15px; /* Reduced padding */
-  font-size: 1rem; /* Reduced font size */
+  padding: 10px 18px;
+  font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
-  border-radius: 6px; /* Smaller border radius */
+  border-radius: 8px;
   border: 2px solid transparent;
   transition: all 0.3s ease;
   text-align: center;
+  flex: 1 1 45%; /* Make buttons take up 45% width */
+  max-width: 180px; /* Max width for buttons */
+  box-sizing: border-box; /* Include padding and border in width */
+  margin: 5px; /* Margin between buttons */
 }
 
-/* Download Resume Button */
+/* Resume Button */
 .resumeButton {
-  background-color: #FFD700; /* Gold */
-  color: #000000; /* Black text */
+  background-color: #FFD700;
+  color: #000000;
   border: 2px solid #FFD700;
-  box-shadow: 0 0 8px rgba(255, 215, 0, 0.4); /* Softer shadow */
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
 }
 
 .resumeButton:hover {
   background-color: transparent;
   color: #FFD700;
   border: 2px solid #FFD700;
-  box-shadow: 0 0 12px rgba(255, 215, 0, 0.7);
-  transform: scale(1.04);
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.8);
+  transform: scale(1.05);
 }
 
-/* Contact Me Button */
+/* Contact Button */
 .contactButton {
-  background-color: #1E90FF; /* Electric Blue */
+  background-color: #1E90FF;
   color: #FFFFFF;
   border: 2px solid #1E90FF;
-  box-shadow: 0 0 8px rgba(30, 144, 255, 0.4);
+  box-shadow: 0 0 8px rgba(30, 144, 255, 0.6);
 }
 
 .contactButton:hover {
   background-color: transparent;
   color: #1E90FF;
   border: 2px solid #1E90FF;
-  box-shadow: 0 0 12px rgba(30, 144, 255, 0.7);
-  transform: scale(1.04);
+  box-shadow: 0 0 12px rgba(30, 144, 255, 0.8);
+  transform: scale(1.05);
 }
 
-/* Mobile Optimization */
-@media (max-width: 768px) {
-  .header {
-    padding: 15px 5px;
-  }
-
+/* Responsive Design */
+@media (max-width: 1024px) {
   .profilePic {
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
   }
 
   .name {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
-  .socialLinks {
-    gap: 10px;
-    flex-wrap: wrap;
+  .tagline {
+    font-size: 1rem;
   }
 
   .icon {
     font-size: 1.8rem;
   }
 
-  .buttons {
-    flex-direction: column; 
-    align-items: center;
-    gap: 10px;
-  }
-
   .resumeButton,
   .contactButton {
-    width: 75%; /* Wider buttons for better touch experience */
-    padding: 7px 12px;
+    width: 100%; /* Take full width for better alignment */
     font-size: 0.9rem;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .profilePic {
     width: 90px;
     height: 90px;
   }
 
   .name {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
-  .socialLinks {
-    gap: 8px;
+  .tagline {
+    font-size: 0.9rem;
   }
 
   .icon {
-    font-size: 1.5rem;
-  }
-
-  .buttons {
-    gap: 8px;
+    font-size: 1.6rem;
   }
 
   .resumeButton,
   .contactButton {
-    width: 50%;
-    padding: 6px 10px;
+    width: 100%; /* Take full width for better alignment */
     font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .profilePic {
+    width: 70px;
+    height: 70px;
+  }
+
+  .name {
+    font-size: 1.8rem;
+  }
+
+  .tagline {
+    font-size: 0.8rem;
+  }
+
+  .icon {
+    font-size: 1.4rem;
+  }
+
+  .resumeButton,
+  .contactButton {
+    width: 100%; /* Take full width for better alignment */
+    font-size: 0.8rem;
   }
 }

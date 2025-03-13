@@ -1,56 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Poppins:wght@300;400;600&display=swap');
+
+/* Projects Section */
 .projects {
-    background-color: #000000; /* Black background */
-    color: #ffffff; /* White text */
-    padding: 50px 20px;
-    text-align: center;
-  }
-  
-  .title {
-    font-size: 2.5rem;
-    color: #FFD700; /* Gold for the title */
-    text-transform: uppercase;
-    margin-bottom: 40px;
-    letter-spacing: 2px;
-  }
-  
-  .projectItem {
-    background: #1E1E1E; /* Dark Gray for contrast */
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 900px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.2); /* Soft gold glow effect */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .projectItem:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 255, 255, 0.3); /* Cyan glow effect on hover */
-  }
-  
-  .projectItem h3 {
+  background-color: #000000; /* Black background */
+  color: #ffffff; /* White text */
+  padding: 50px 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif; /* Use Poppins for all text */
+}
+
+/* Title */
+.projects .title {
+  font-size: 2.5rem;
+  color: #FFD700; /* Gold for the title */
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  font-family: 'Orbitron', sans-serif; /* Use Orbitron for title */
+}
+
+/* Projects Container */
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Project Item */
+.projectItem {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background: #1E1E1E; /* Dark Gray for contrast */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 215, 0, 0.2); /* Soft gold glow effect */
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px;
+}
+
+.projectItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 255, 255, 0.3); /* Cyan glow effect on hover */
+}
+
+/* Project Image Container */
+.projectImageContainer {
+  flex: 1;
+  overflow: hidden;
+}
+
+.projectImage {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.projectItem:hover .projectImage {
+  transform: scale(1.1);
+}
+
+/* Project Content */
+.projectContent {
+  flex: 2;
+  text-align: left;
+}
+
+.projectContent h3 {
+  font-size: 1.8rem;
+  color: #00FFFF; /* Cyan for headings */
+  margin-bottom: 10px;
+  font-family: 'Orbitron', sans-serif; /* Use Orbitron for item headings */
+}
+
+.projectContent p {
+  font-size: 1.1rem;
+  color: #D3D3D3; /* Light gray for soft contrast */
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif; /* Use Poppins for text */
+}
+
+/* GitHub Link */
+.githubLink {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  font-size: 1.1rem;
+  color: #FFD700; /* Gold color for GitHub link */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.githubIcon {
+  margin-right: 5px;
+}
+
+.githubLink:hover {
+  color: #00FFFF; /* Cyan hover effect for the GitHub link */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .projects .title {
     font-size: 1.8rem;
-    color: #00FFFF; /* Cyan for headings */
-    margin-bottom: 15px;
   }
-  
-  .projectItem p {
-    font-size: 1.1rem;
-    color: #D3D3D3; /* Light gray for soft contrast */
-    line-height: 1.6;
+
+  .projectContent h3 {
+    font-size: 1.5rem;
   }
-  
-  .githubLink {
-    display: block;
-    margin-top: 15px;
-    font-size: 1.1rem;
-    color: #FFD700; /* Gold color for GitHub link */
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
+
+  .projectContent p {
+    font-size: 1rem;
   }
-  
-  .githubLink:hover {
-    color: #00FFFF; /* Cyan hover effect for the GitHub link */
+}
+
+@media (max-width: 768px) {
+  .projectsContainer {
+    gap: 20px;
   }
-  
+
+  .projectItem {
+    flex-direction: column;
+  }
+
+  .projectImageContainer,
+  .projectContent {
+    width: 100%;
+  }
+
+  .projects {
+    padding: 40px 15px;
+  }
+
+  .projects .title {
+    font-size: 1.6rem;
+  }
+
+  .projectContent h3 {
+    font-size: 1.4rem;
+  }
+
+  .projectContent p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects {
+    padding: 30px 10px;
+  }
+
+  .projects .title {
+    font-size: 1.4rem;
+  }
+
+  .projectContent h3 {
+    font-size: 1.2rem;
+  }
+
+  .projectContent p {
+    font-size: 0.85rem;
+  }
+}

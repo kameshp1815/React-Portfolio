@@ -6,13 +6,14 @@ import profilePic from "../../assets/kamesh.jpg";
 const Header = () => {
   return (
     <header id="header" className="header">
+      {/* Profile Picture */}
       <div className="profileContainer">
         <img src={profilePic} alt="Kamesh P" className="profilePic" />
         <h1 className="name">KAMESH P</h1>
         <h2 className="tagline">Full-Stack Developer | Problem Solver</h2>
-        <br />
       </div>
 
+      {/* Social Media Links */}
       <div className="socialLinks">
         <a href="https://github.com/kameshp1815" target="_blank" rel="noopener noreferrer" title="GitHub">
           <FaGithub className="icon github" />
@@ -28,12 +29,11 @@ const Header = () => {
         </a>
       </div>
 
+      {/* Resume & Contact Buttons */}
       <div className="buttons">
         <a href="/src/assets/resume.pdf" download className="resumeButton"> Resume</a>
         <a href="mailto:kameshkamesh3876@gmail.com" className="contactButton">Contact Me</a>
       </div>
-    <br />
-      <hr />
     </header>
   );
 };

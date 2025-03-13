@@ -1,35 +1,93 @@
+/* Import Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Poppins:wght@300;400;600&display=swap");
+
+/* About Section */
 .about {
-    background-color: #000000; /* Black background */
-    color: #ffffff; /* White text */
-    padding: 50px 20px;
-    text-align: center;
-  }
-  
-  .title {
-    font-size: 2rem;
-    color: #FFD700; /* Gold */
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    letter-spacing: 2px;
-  }
-  
-  /* Description Styling */
-  .description {
-    font-size: 1.1rem;
-    color: #D3D3D3; /* Light Gray */
-    line-height: 1.6;
-    max-width: 700px;
-    margin: auto;
-    text-align: justify;
-    background: #1E1E1E; /* Dark Gray */
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.2); /* Soft Gold Glow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .description:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 255, 255, 0.3); /* Cyan Glow */
-  }
-  
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+  padding: 100px 12%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-wrapper {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Image Card */
+.about-image-card {
+  background: #222;
+  padding: 35px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.5);
+  transition: 0.3s ease-in-out;
+}
+
+.about-image-card:hover {
+  box-shadow: 0px 0px 25px rgba(0, 255, 255, 0.8);
+  transform: scale(1.07);
+}
+
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 5px solid #00ffff;
+  transition: 0.3s;
+}
+
+.about-name {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Orbitron", sans-serif;
+  color: #FFD700;
+  margin-top: 12px;
+  letter-spacing: 1.5px;
+}
+
+.about-role {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: #B57EDC;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+/* About Content */
+.about-content {
+  max-width: 550px;
+  background: rgba(30, 30, 30, 0.95);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 12px #FFD700;
+}
+
+.about-title {
+  font-size: 32px;
+  font-weight: 700;
+  font-family: "Orbitron", sans-serif;
+  color: #FFD700;
+  text-shadow: 0 0 12px #FFD700;
+  border-bottom: 3px solid #FFD700;
+  display: inline-block;
+  padding-bottom: 6px;
+  letter-spacing: 2px;
+}
+
+.about-text {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: #D3D3D3;
+  margin-top: 18px;
+  line-height: 1.8;
+}
+
+.about-text span {
+  color: #00FFFF;
+  font-weight: 600;
+  font-family: "Orbitron", sans-serif;
+}

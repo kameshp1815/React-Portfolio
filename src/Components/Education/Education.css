@@ -1,41 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Poppins:wght@300;400;600&display=swap');
+
+/* Education Section */
 .education {
-    background-color: #000000; /* Black background */
-    color: #ffffff; /* White text for readability */
-    padding: 50px 20px;
-    text-align: center;
+  background-color: #000000; /* Black background */
+  color: #ffffff; /* White text for readability */
+  padding: 50px 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif; /* Use Poppins for all text */
+}
+
+/* Title */
+.education .title {
+  font-size: 2rem;
+  color: #FFD700; /* Gold for a premium look */
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  font-family: 'Orbitron', sans-serif; /* Use Orbitron for title */
+}
+
+/* Education Item */
+.educationItem {
+  background: #1E1E1E; /* Dark Gray for contrast */
+  padding: 20px;
+  margin: 15px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 215, 0, 0.2); /* Soft gold glow effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.educationItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 255, 255, 0.3); /* Cyan glow effect on hover */
+}
+
+/* Education Item Icon */
+.educationItemIcon {
+  font-size: 2rem;
+  color: #FFD700;
+  margin-right: 15px;
+}
+
+/* Education Item Content */
+.educationItemContent {
+  flex: 1;
+  text-align: left;
+}
+
+/* Education Item Heading */
+.educationItem h3 {
+  font-size: 1.5rem;
+  color: #00FFFF; /* Cyan for headings */
+  margin-bottom: 10px;
+  font-family: 'Orbitron', sans-serif; /* Use Orbitron for item headings */
+}
+
+/* Education Item Paragraph */
+.educationItem p {
+  font-size: 1rem;
+  color: #D3D3D3; /* Light gray for soft contrast */
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif; /* Use Poppins for text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .education {
+    padding: 40px 15px;
   }
-  
+
   .education .title {
-    font-size: 2rem;
-    color: #FFD700; /* Gold for a premium look */
-    text-transform: uppercase;
-    margin-bottom: 30px;
-    letter-spacing: 2px;
+    font-size: 1.8rem;
   }
-  
+
   .educationItem {
-    background: #1E1E1E; /* Dark Gray for contrast */
-    padding: 20px;
-    margin: 15px auto;
-    max-width: 800px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.2); /* Soft gold glow effect */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 15px;
   }
-  
-  .educationItem:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 255, 255, 0.3); /* Cyan glow effect on hover */
-  }
-  
+
   .educationItem h3 {
-    font-size: 1.5rem;
-    color: #00FFFF; /* Cyan for headings */
+    font-size: 1.3rem;
+  }
+
+  .educationItem p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .education {
+    padding: 30px 10px;
+  }
+
+  .education .title {
+    font-size: 1.6rem;
+  }
+
+  .educationItem {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .educationItemIcon {
     margin-bottom: 10px;
   }
-  
-  .educationItem p {
-    font-size: 1rem;
-    color: #D3D3D3; /* Light gray for soft contrast */
-    line-height: 1.5;
+
+  .educationItem h3 {
+    font-size: 1.2rem;
   }
+
+  .educationItem p {
+    font-size: 0.85rem;
+  }
+}
