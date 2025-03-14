@@ -4,9 +4,9 @@ import { FaPython, FaJava, FaHtml5, FaCss3Alt, FaJs, FaCogs, FaDatabase, FaGithu
 const Skills = () => {
   const programmingLanguages = [
     { name: "Python", icon: <FaPython />, description: "Experienced in Python programming for data analysis, web development, and automation." },
-    { name: "Java", icon: <FaJava />, description: "Proficient in Java for object-oriented programming and software development." },
     { name: "C", icon: <FaCogs />, description: "Experienced in C programming for system-level development and algorithms." },
     { name: "C++", icon: <FaCodeBranch />, description: "Skilled in C++ for object-oriented programming and software development." },
+    { name: "Java", icon: <FaJava />, description: "Proficient in Java for object-oriented programming and software development." },
     { name: "SQL", icon: <FaDatabase />, description: "Proficient in SQL for database management and data manipulation." },
   ];
 
@@ -26,7 +26,7 @@ const Skills = () => {
 
   return (
     <section id="skills" className="skills">
-      <h2 className="title">Skills</h2>
+      <h2 className="title"><span className="underline-attractive">Skills</span></h2>
       
       <div className="category">
         <h3 className="categoryTitle">Programming Languages</h3>

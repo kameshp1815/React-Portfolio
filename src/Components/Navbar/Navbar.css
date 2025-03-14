@@ -23,7 +23,8 @@
   font-size: 1.5rem;
   font-weight: 700;
   color: #ffd700;
-  font-family: "Orbitron", sans-serif; /* Use Orbitron for your name */
+  font-family: "Orbitron", sans-serif;
+  text-shadow: 2px 2px 10px #00aaff
 }
 
 /* Logo */
