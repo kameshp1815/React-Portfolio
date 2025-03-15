@@ -1,5 +1,6 @@
 import "./About.css";
-import profilePic from "../../assets/kamesh.jpg"; // Update with your actual image
+import profilePic from "../../assets/kamesh.jpg"; // Your profile image
+import gifImage from "../../assets/FE.gif"; // Your GIF
 
 const About = () => {
   return (
@@ -12,18 +13,23 @@ const About = () => {
           <p className="about-role">FULL STACK DEVELOPER</p>
         </div>
 
-        {/* Right Section - About Content */}
+        {/* Middle Section - About Content */}
         <div className="about-content">
           <h2 className="about-title">ABOUT ME</h2>
           <p className="about-text">
-            🚀 Passionate about <span>Full Stack Development</span> and building dynamic, high-performance web applications.  
+            🚀 Passionate about <span>Full Stack Development</span> and building dynamic, high-performance web applications.
           </p>
           <p className="about-text">
-            💡 Love problem-solving, exploring **cutting-edge technologies**, and constantly enhancing my skills.  
+            💡 Love problem-solving, exploring <span>cutting-edge technologies</span>, and constantly enhancing my skills.
           </p>
           <p className="about-text">
             🔥 Excited to work on challenging projects and create impactful digital experiences.
           </p>
+        </div>
+
+        {/* Right Section - GIF */}
+        <div className="about-gif-card">
+          <img src={gifImage} alt="Developer Animation" className="profile-gif" />
         </div>
       </div>
     </section>

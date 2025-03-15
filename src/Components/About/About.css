@@ -1,56 +1,63 @@
-/* Import Google Font */
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Poppins:wght@300;400;600&display=swap");
-
 /* About Section */
 .about {
   background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
-  padding: 100px 12%;
+  padding: 80px 10%;
   display: flex;
   justify-content: center;
+  overflow: hidden; /* Prevents light/glow overflow */
 }
 
+/* Flexbox Wrapper */
 .about-wrapper {
   display: flex;
-  gap: 60px;
+  gap: 50px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+  overflow: hidden; /* Ensures content stays inside */
 }
 
-/* Image Card */
+/* Profile Card */
 .about-image-card {
   background: #222;
-  padding: 35px;
+  padding: 30px;
   border-radius: 20px;
   text-align: center;
-  box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.5);
-  transition: 0.3s ease-in-out;
+  box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.5);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  overflow: hidden;
 }
 
 .about-image-card:hover {
-  box-shadow: 0px 0px 25px rgba(0, 255, 255, 0.8);
-  transform: scale(1.07);
+  box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.8);
+  transform: scale(1.05);
 }
 
 .profile-pic {
-  width: 160px;
-  height: 160px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  border: 5px solid #00ffff;
-  transition: 0.3s;
+  border: 4px solid cyan;
+  transition: transform 0.3s;
+}
+
+.profile-pic:hover {
+  transform: rotate(5deg);
 }
 
 .about-name {
-  font-size: 28px;
-  font-weight: 700;
+  font-size: 26px;
+  font-weight: bold;
   font-family: "Orbitron", sans-serif;
   color: #FFD700;
-  margin-top: 12px;
-  letter-spacing: 1.5px;
+  margin-top: 10px;
+  text-transform: uppercase;
 }
 
 .about-role {
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Poppins", sans-serif;
   color: #B57EDC;
   text-transform: uppercase;
@@ -59,19 +66,22 @@
 
 /* About Content */
 .about-content {
-  max-width: 550px;
+  width: 500px;
+  max-width: 100%;
   background: rgba(30, 30, 30, 0.95);
-  padding: 40px;
+  padding: 35px;
   border-radius: 12px;
-  box-shadow: 0px 0px 12px #FFD700;
+  box-shadow: 0px 0px 12px rgba(255, 215, 0, 0.7);
+  text-align: left;
+  overflow: hidden;
 }
 
 .about-title {
-  font-size: 32px;
-  font-weight: 700;
+  font-size: 30px;
+  font-weight: bold;
   font-family: "Orbitron", sans-serif;
   color: #FFD700;
-  text-shadow: 0 0 12px #FFD700;
+  text-shadow: 0 0 8px #FFD700;
   border-bottom: 3px solid #FFD700;
   display: inline-block;
   padding-bottom: 6px;
@@ -79,15 +89,75 @@
 }
 
 .about-text {
-  font-size: 18px;
+  font-size: 17px;
   font-family: "Poppins", sans-serif;
   color: #D3D3D3;
-  margin-top: 18px;
+  margin-top: 16px;
   line-height: 1.8;
 }
 
 .about-text span {
   color: #00FFFF;
-  font-weight: 600;
+  font-weight: bold;
   font-family: "Orbitron", sans-serif;
+}
+
+/* GIF Section */
+.about-gif-card {
+  background: #222;
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0px 0px 15px rgba(255, 105, 180, 0.6);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.about-gif-card:hover {
+  box-shadow: 0px 0px 20px rgba(255, 105, 180, 1);
+  transform: scale(1.05);
+}
+
+.profile-gif {
+  width: 260px;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .about {
+      padding: 60px 5%;
+  }
+
+  .about-wrapper {
+      flex-direction: column;
+      gap: 30px;
+  }
+
+  .about-image-card,
+  .about-content,
+  .about-gif-card {
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+  }
+
+  .about-title {
+      font-size: 26px;
+  }
+
+  .about-text {
+      font-size: 15px;
+      text-align: center;
+  }
+
+  .profile-pic {
+      width: 130px;
+      height: 130px;
+  }
+
+  .profile-gif {
+      width: 200px;
+  }
 }

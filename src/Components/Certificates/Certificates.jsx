@@ -9,7 +9,7 @@ const Certificates = () => {
   useEffect(() => {
     setTimeout(() => {
       setFadeIn(true);
-    }, 200); // Delay effect for smooth animation
+    }, 200);
   }, []);
 
   return (
