@@ -4,19 +4,19 @@
   padding: 80px 10%;
   display: flex;
   justify-content: center;
-  overflow: hidden; /* Prevents light/glow overflow */
+  overflow: hidden;
 }
 
 /* Flexbox Wrapper */
 .about-wrapper {
   display: flex;
   gap: 50px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* Keeps items in a row on large screens */
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   max-width: 1200px;
   width: 100%;
-  overflow: hidden; /* Ensures content stays inside */
+  overflow: hidden; /* Prevents overflow */
 }
 
 /* Profile Card */
@@ -27,12 +27,7 @@
   text-align: center;
   box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.5);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  overflow: hidden;
-}
-
-.about-image-card:hover {
-  box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.8);
-  transform: scale(1.05);
+  flex: 1; 
 }
 
 .profile-pic {
@@ -43,15 +38,11 @@
   transition: transform 0.3s;
 }
 
-.profile-pic:hover {
-  transform: rotate(5deg);
-}
-
 .about-name {
   font-size: 26px;
   font-weight: bold;
   font-family: "Orbitron", sans-serif;
-  color: #FFD700;
+  color: #FFD700; 
   margin-top: 10px;
   text-transform: uppercase;
 }
@@ -59,21 +50,20 @@
 .about-role {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
-  color: #B57EDC;
+  color: #B57EDC; 
   text-transform: uppercase;
   letter-spacing: 1.2px;
 }
 
 /* About Content */
 .about-content {
-  width: 500px;
-  max-width: 100%;
+  flex: 2; 
+  max-width: 500px;
   background: rgba(30, 30, 30, 0.95);
   padding: 35px;
   border-radius: 12px;
   box-shadow: 0px 0px 12px rgba(255, 215, 0, 0.7);
   text-align: left;
-  overflow: hidden;
 }
 
 .about-title {
@@ -110,12 +100,7 @@
   text-align: center;
   box-shadow: 0px 0px 15px rgba(255, 105, 180, 0.6);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  overflow: hidden;
-}
-
-.about-gif-card:hover {
-  box-shadow: 0px 0px 20px rgba(255, 105, 180, 1);
-  transform: scale(1.05);
+  flex: 1; 
 }
 
 .profile-gif {
@@ -125,39 +110,36 @@
 }
 
 /* Responsive Design */
-@media (max-width: 900px) {
-  .about {
-      padding: 60px 5%;
-  }
-
+@media (max-width: 1024px) {
   .about-wrapper {
-      flex-direction: column;
-      gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
   }
 
   .about-image-card,
   .about-content,
   .about-gif-card {
-      width: 90%;
-      max-width: 400px;
-      text-align: center;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
   }
 
   .about-title {
-      font-size: 26px;
+    font-size: 26px;
   }
 
   .about-text {
-      font-size: 15px;
-      text-align: center;
+    font-size: 15px;
+    text-align: center;
   }
 
   .profile-pic {
-      width: 130px;
-      height: 130px;
+    width: 130px; 
+    height: 130px;
   }
 
   .profile-gif {
-      width: 200px;
+    width: 200px;
   }
 }
