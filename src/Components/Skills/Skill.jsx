@@ -1,6 +1,6 @@
 import "./Skills.css";
-import { FaPython, FaJava, FaHtml5, FaCss3Alt, FaJs, FaCogs, FaDatabase, FaGithub, FaCodeBranch, FaGitAlt } from 'react-icons/fa';
-
+import { FaPython,FaReact , FaProjectDiagram,FaJava, FaNodeJs,FaHtml5, FaCss3Alt, FaJs, FaCogs, FaDatabase, FaGithub, FaCodeBranch, FaGitAlt } from 'react-icons/fa';
+import{ SiExpress ,SiTailwindcss} from 'react-icons/si';
 const Skills = () => {
   const programmingLanguages = [
     { name: "Python", icon: <FaPython />, description: "Experienced in Python programming for data analysis, web development, and automation." },
@@ -11,18 +11,34 @@ const Skills = () => {
   ];
 
   const technologies = [
-    { name: "HTML", icon: <FaHtml5 />, description: "Proficient in creating well-structured web pages using HTML5." },
-    { name: "CSS", icon: <FaCss3Alt />, description: "Skilled in styling web pages with CSS3 and responsive design techniques." },
-    { name: "JavaScript (JS)", icon: <FaJs />, description: "Experienced in JavaScript for front-end development and interactive web applications." },
-    { name: "Object-Oriented Programming (OOP)", icon: <FaCogs />, description: "Proficient in object-oriented programming concepts and design patterns." },
-    { name: "Git", icon: <FaGitAlt />, description: "Experienced in version control using Git." },
-    { name: "GitHub", icon: <FaGithub />, description: "Skilled in collaborating and sharing code using GitHub." },
-  ];
+  { name: "HTML", icon: <FaHtml5 />, description: "Proficient in creating well-structured web pages using HTML5." },
+  { name: "CSS", icon: <FaCss3Alt />, description: "Skilled in styling web pages with CSS3 and responsive design techniques." },
+  { name: "Tailwind CSS", icon: <SiTailwindcss />, description: "Experienced in building responsive UIs using the Tailwind CSS utility-first framework." },
+  { name: "JavaScript (JS)", icon: <FaJs />, description: "Experienced in JavaScript for front-end development and interactive web applications." },
+  { name: "React", icon: <FaReact />, description: "Proficient in building user interfaces with React.js." },
+  { name: "Node.js", icon: <FaNodeJs />, description: "Experienced in server-side development using Node.js." },
+  { name: "Express.js", icon: <SiExpress />, description: "Skilled in building web applications with Express.js." },
+  { name: "Git", icon: <FaGitAlt />, description: "Experienced in version control using Git." },
+  { name: "GitHub", icon: <FaGithub />, description: "Skilled in collaborating and sharing code using GitHub." },
+];
 
-  const relevantCoursework = [
-    { name: "DBMS", icon: <FaDatabase />, description: "Knowledgeable in database management systems and their applications." },
-    { name: "Data Structures and Algorithms", icon: <FaCogs />, description: "Skilled in data structures and algorithms for efficient problem-solving." },
-  ];
+
+  const concepts = [
+  {
+    name: "Object-Oriented Programming (OOP)",
+    icon: <FaCogs />,
+    description: "Proficient in OOP principles like encapsulation, inheritance, abstraction, and polymorphism.",
+  },
+  {
+    name: "Data Structures & Algorithms",
+    icon: <FaProjectDiagram />,
+    description: "Strong grasp of arrays, linked lists, trees, stacks, queues, graphs, and algorithmic strategies like sorting and searching.",
+  },
+  {
+    name: "Database Management Systems (DBMS)",
+    icon: <FaDatabase />,
+    description: "Understanding of relational databases, normalization, indexing, and SQL querying.",
+  }]
 
   return (
     <section id="skills" className="skills">
@@ -55,9 +71,9 @@ const Skills = () => {
       </div>
       
       <div className="category">
-        <h3 className="categoryTitle">Relevant Coursework</h3>
+        <h3 className="categoryTitle"> Concepts</h3>
         <div className="iconContainer">
-          {relevantCoursework.map((skill, index) => (
+          {concepts.map((skill, index) => (
             <div key={index} className="skillIconBox">
               <div className="skillIcon">{skill.icon}</div>
               <div className="skillName">{skill.name}</div>
