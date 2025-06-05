@@ -1,6 +1,6 @@
 import "./About.css";
 import profilePic from "../../assets/kamesh.jpg"; // Your profile image
-import gifImage from "../../assets/FE.gif"; // Your GIF
+import aboutimg from "../../assets/aboutimg.jpg"
 
 const About = () => {
   return (
@@ -29,7 +29,7 @@ const About = () => {
 
         {/* Right Section - GIF */}
         <div className="about-gif-card">
-          <img src={gifImage} alt="Developer Animation" className="profile-gif" />
+          <img src={aboutimg} alt="Developer Animation" className="profile-gif" />
         </div>
       </div>
     </section>

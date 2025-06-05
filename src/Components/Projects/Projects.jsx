@@ -13,16 +13,16 @@ const Projects = () => {
       github: "https://udhayam-csbs.vercel.app/"
     },
     {
-      title: "Rock-Paper-Scissors",
-      description: "Developed an interactive Rock-Paper-Scissors game using HTML, CSS, and JavaScript, featuring a user-friendly interface and responsive design for an engaging experience.",
-      image: project2Image,
-      github: "https://kamesh-rockpaper-scissor-game.netlify.app/"
-    },
-    {
       title: "Agriculture Machinery Rental",
       description: "Developed a dynamic Agriculture Machinery Rental System using React for the frontend. The system features a Machines page where users can browse available agricultural machinery and book rentals based on the number of days.",
       image: project3Image,
       github: "https://agriculture-machines-rental.onrender.com/"
+    },
+    {
+      title: "Rock-Paper-Scissors",
+      description: "Developed an interactive Rock-Paper-Scissors game using HTML, CSS, and JavaScript, featuring a user-friendly interface and responsive design for an engaging experience.",
+      image: project2Image,
+      github: "https://kamesh-rockpaper-scissor-game.netlify.app/"
     }
   ];
 
